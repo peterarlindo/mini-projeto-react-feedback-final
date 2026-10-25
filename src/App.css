@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #646cff;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.app-header h1 {
+  margin-bottom: 10px;
+}
+
+.app-main {
+  width: min(1100px, 90%);
+  margin: 40px auto;
+}
+
+.main-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.main-content h2 {
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #646cff;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+.feedback-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.feedback-form h2 {
+  margin-bottom: 20px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.feedback-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #646cff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
